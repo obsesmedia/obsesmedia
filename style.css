@@ -1,0 +1,463 @@
+:root
+{
+  --white #fff;
+  --grey #4d4d4d;
+  --dark-blue #707070;
+  --black #000000;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "tahoma";
+  
+}
+
+body
+{
+  background-color: #fff;
+  color: black;
+}
+
+header
+{
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.title
+{
+  color: black;
+  border-bottom: 1px solid black;
+  font-size: 15pt;
+}
+
+.input-search
+{
+  width: 30%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
+}
+
+.input-submit
+{
+  margin-left: -5px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  background-color: ghostwhite;
+  color: black;
+  font-weight: bold;
+}
+
+nav
+{
+  margin-top: 25px;
+}
+
+nav ul
+{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav ul li a
+{
+  color: floralwhite
+}
+
+nav ul li a:hover
+{
+  border-bottom: 1px solid floralwhite
+}
+
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+  }
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: ghostwhite;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: black;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: white;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p
+{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.populer
+{
+  display: grid;
+  grid-template-columns: repeat(5,1fr)
+  width: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.populer img
+{
+  border-radius: 30px;
+}
+
+.link a
+{
+  color: black;
+}
+
+.link a:hover
+{
+  color: skyblue;
+}
+
+.pesan img
+{
+  width: 0px;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: ghostwhite;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: black;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: white;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+  }
+
+.title-p
+{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.title-s
+{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.stream
+{
+  display: grid;
+  grid-template-columns: repeat(5,1fr)
+  width: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.stream img
+{
+  border-radius: 30px;
+}
+
+.link a
+{
+  color: black;
+}
+
+.link a:hover
+{
+  color: skyblue;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: ghostwhite;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: black;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: white;
+}
+
+.content 
+  {
+    max-height: 30%;
+    width: 50%;
+  }
+
+.tentang
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 15pt;
+}
+ 
+.card
+{
+    background-color: var(--blue);
+    padding: 20%;
+    border-radius: 10px;
+    box-shadow: 8px 8px darkgrey;
+}
+ 
+.card h1
+{
+    text-align: center;
+}
+ 
+html
+{
+    scroll-behavior: smooth;
+}
+ 
+ 
+footer
+{
+    display: grid;
+    justify-content: center;
+    background-color: var(--blue);
+    margin-top: 10%;
+    padding: 5%;
+}
+ 
+.sosmed img 
+{
+    width: 45px;
+}
+ 
+#copyright
+{
+    text-align: center;
+    padding: 10px;
+  }
+
+@media screen and (max-width:500px) {
+  .slider
+  {
+    display: none;
+  }
+  
+  .link img
+  {
+    width: 87px;
+  }
+
+  .title-p
+  {
+    padding-top: 6rem;
+  }
+  
+  .populer
+  {
+   display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .title-s
+  {
+    padding-top: 3rem;
+  }
+
+  .tentang
+  {
+    margin-right: 20px;
+    
+    margin-right: 20px;
+  }
+
+@media screen and (max-width: 600px:)
+{
+  .populer
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  
+}
